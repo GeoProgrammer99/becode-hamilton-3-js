@@ -10,18 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
+  document.getElementById("run").addEventListener("click", () => {
     const fruits = new Set([
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
+      "pomme",
+      "poire",
+      "fraise",
+      "tomate",
+      "orange",
+      "mandarine",
+      "durian",
+      "pêche",
+      "raisin",
+      "cerise"
     ]);
 
-    // your code here
+    fruits.delete("pomme");
+    fruits.delete("cerise");
+    fruits.add("banane");
+    fruits.add("kiwi");
+    //   const simplefruits = new set(fruits);
+    console.log(Array.from(fruits));
+  });
 })();
